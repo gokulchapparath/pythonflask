@@ -1,0 +1,21 @@
+
+ {% extends "master.html" %}
+ {% block content %}
+  <div class="container">
+      <div class="row">
+
+          {% for y in myname %}
+           <div class="col">
+<h1>my name is <strong>{{y.name}}</strong></h1>
+               </div>
+{% endfor %}
+
+      </div>
+      <div class="row">
+          <div class="col">
+              the time is {{times}}
+          </div>
+      </div>
+
+      </div>
+{% endblock content %}
